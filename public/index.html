@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <title>Find Your Flight</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="client.js"></script>
+</head>
+<body>
+  <img src="https://cdn.dribbble.com/userupload/21019428/file/original-330ffb3162c57e05db3efb5815cbcb3a.gif" alt="Loading..." class="loader" id="global_loader" />
+  <header id="main-header">
+    <div class="logo-box">
+        <img src="logo.png" alt="Logo" class="logo" />
+        <h1>Find Your Flight</h1>
+    </div>
+  </header>
+
+  <div id="overlay-wrapper">
+
+    
+    <h1> Country Lookup by Airline</h1>
+    <label>Country Code:</label>
+    <input type="text" id="country_code_airline" placeholder="e.g. US" />
+    <button id="country_btn_airline">Search</button>
+    <div class="output-box">
+      <h2>Airlines</h2>
+      <div id="airline_lists"><table></table></div>
+    </div>
+
+    
+    <h1> Country Lookup by Airport</h1>
+    <label>Country Code:</label>
+    <input type="text" id="country_code_airport" placeholder="e.g. US" />
+    <button id="country_btn_airport">Search</button>
+    <div class="output-box">
+      <h2>Airports</h2>
+      <div id="airport_lists"><table></table></div>
+    </div>
+
+    
+    <h1> Airline Info</h1>
+    <label>Airline Code (IATA):</label>
+    <input type="text" id="airline_code" placeholder="e.g. AI, US" />
+    <button id="airline_btn">Search</button>
+    <div class="output-box">
+      <h2>Airline Info</h2>
+      <div id="airline_airports"><table></table></div>
+
+      <h2>Routes</h2>
+      <div id="airline_routes"><table></table></div>
+    </div>
+
+    
+    <h1> Airport Info</h1>
+    <label>Airport Code (IATA):</label>
+    <input type="text" id="airport_code" placeholder="e.g. JFK, LAX, DEL" />
+    <button id="airport_btn">Search</button>
+    <div class="output-box">
+      <div id="airport_info"></div>
+
+      <h2>Routes From</h2>
+      <div id="routes_from"><table></table></div>
+
+      <h2>Routes To</h2>
+      <div id="routes_to"><table></table></div>
+
+      <h2>Airlines At Airport</h2>
+      <div id="airport_airlines"><table></table></div>
+    </div>
+
+    
+    <h1> Airport Comparison</h1>
+    <label>From:</label>
+    <input type="text" id="route_from" placeholder="From IATA(JFK, LAX, DEL)" />
+    <label>To:</label>
+    <input type="text" id="route_to" placeholder="To IATA(JFK, LAX, DEL)" />
+    <button id="route_btn">Compare</button>
+    <div class="output-box">
+      <h2>Airlines Between</h2>
+      <div id="airlines_between"><table></table></div>
+
+      <h2>Distance</h2>
+      <p id="route_distance"></p>
+    </div>
+    <h2>🗺️ Map</h2>
+    <div id="map" style="height: 400px; width: 100%; margin-top: 1rem; border-radius: 8px;"></div>
+
+  </div>
+
+</body>
+</html>
