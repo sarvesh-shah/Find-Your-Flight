@@ -1,7 +1,9 @@
 # Find-Your-Flight
 
 Find Your Flight - CS612 Assignment 3
+
 📋 Project Overview
+
 Find Your Flight is a full-stack web application that allows users to search airlines, airports, routes, current weather, and visually map airport locations and flight paths.
 This project is built using Node.js, Express.js, PostgreSQL, Vanilla JavaScript, HTML5, CSS3, and Leaflet.js.
 
@@ -22,26 +24,23 @@ Open a terminal and navigate to the project folder.
 
 Install required dependencies:
 
-bash
-Copy
-Edit
 npm install
 Start the server:
 
-bash
-Copy
-Edit
+
 npm start
 Open your browser and visit:
 
-arduino
-Copy
-Edit
+
 http://localhost:8001
+
+
 ✅ Now you can start exploring airline, airport, and flight data interactively!
 
 🧠 Main Features Implemented
+
 1. ✈️ Country Lookup by Airline
+
 Input a country code (like US, IN).
 
 Click Search to view all airlines in that country.
@@ -49,6 +48,7 @@ Click Search to view all airlines in that country.
 Airlines data includes Name, IATA, ICAO, Callsign, Country.
 
 2. 🛫 Country Lookup by Airport
+
 Input a country code.
 
 Click Search to view all airports from that country.
@@ -56,11 +56,13 @@ Click Search to view all airports from that country.
 Airports data includes Name, City, IATA, ICAO, Country, Latitude, Longitude.
 
 3. 🏢 Airline Info
+
 Enter an airline IATA code (e.g., UA).
 
 Displays the airline's information and all routes they serve.
 
 4. 🛬 Airport Info
+
 Enter an airport IATA code (e.g., JFK).
 
 Displays the airport’s details, including current weather.
@@ -68,6 +70,7 @@ Displays the airport’s details, including current weather.
 📍 The airport is pinned on the map automatically.
 
 5. 🔀 Airport Comparison
+
 Input two airport IATA codes.
 
 Displays:
@@ -79,6 +82,7 @@ Distance between the airports
 Flight path plotted on the map visually.
 
 🌟 Additional Features
+
 Loader animation while data is fetched.
 
 Flip-style text animation on table data (mimicking real airport boards).
@@ -94,6 +98,7 @@ Visual route lines connecting airports.
 Interactive tables and animated map updates.
 
 📦 Technologies Used
+
 Backend: Node.js, Express.js, PostgreSQL
 
 Frontend: HTML5, CSS3, Vanilla JavaScript
@@ -101,19 +106,6 @@ Frontend: HTML5, CSS3, Vanilla JavaScript
 APIs: Open-Meteo Weather API
 
 Maps: Leaflet.js (OpenStreetMap tiles)
-
-📄 Folder Structure
-pgsql
-Copy
-Edit
-/find-your-flight/
- ├── public/
- │    ├── index.html
- │    ├── style.css
- │    └── client.js
- ├── server.js
- ├── package.json
- └── README.md
 
 ✍️ Author
 Project for: CS612 – Concepts and Structures in Internet Computing – Spring 2025
