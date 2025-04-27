@@ -24,16 +24,25 @@ Open a terminal and navigate to the project folder.
 
 Install required dependencies:
 
+```bash
+
 npm install
+
+```
 Start the server:
 
+```bash
 
 npm start
+
+```
 Open your browser and visit:
 
+```arduino
 
 http://localhost:8001
 
+```
 
 ✅ Now you can start exploring airline, airport, and flight data interactively!
 
